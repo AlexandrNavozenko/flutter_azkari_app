@@ -17,15 +17,6 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/azkary':(BuildContext context) => Azkary(),
       },
-      // onGenerateRoute: (RouteSettings  settings) {
-      //   final arguments = settings.arguments;
-      //   switch (settings.name) {
-      //     case '/azkary':
-      //         return Azkary(id: arguments.id);
-      //     default:
-      //       return null;
-      //   }
-      // },
       debugShowCheckedModeBanner: false,
       title: 'Flutter Azkari app',
       theme: ThemeData(
