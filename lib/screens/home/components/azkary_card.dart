@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../constants.dart';
 
@@ -18,7 +19,7 @@ class AzkaryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(top: kDefaultPadding),
-      padding: EdgeInsets.all(15.0),
+      padding: EdgeInsets.all(16.0),
       color: Colors.white,
       height: 180.0,
       width: double.infinity,
@@ -37,7 +38,7 @@ class AzkaryCard extends StatelessWidget {
             left: 20.0,
             child: Text(
               title,
-              style: TextStyle(
+              style: GoogleFonts.openSans(
                   color: Colors.white,
                   fontSize: 18.0),
             ),
@@ -55,7 +56,7 @@ class AzkaryCard extends StatelessWidget {
               },
               child: Text(
                 'Посмотреть >',
-                style: TextStyle(
+                style: GoogleFonts.openSans(
                     color: kDefaultTextColor,
                     fontSize: 16.0),
               ),

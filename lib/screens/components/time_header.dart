@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../constants.dart';
 import 'time_decoration.dart';
@@ -16,7 +17,7 @@ class TimeHeader extends StatelessWidget {
         color: Colors.white,
         height: 50.0,
         width: double.infinity,
-        padding: EdgeInsets.symmetric(horizontal: 10.0),
+        padding: EdgeInsets.symmetric(horizontal: 13.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -30,7 +31,7 @@ class TimeHeader extends StatelessWidget {
                 ),
                 Text(
                   'Москва',
-                  style: TextStyle(
+                  style: GoogleFonts.openSans(
                     color: kDefaultTextColor,
                     fontWeight: FontWeight.bold,
                     fontSize: 20.0,

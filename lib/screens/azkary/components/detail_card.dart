@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../constants.dart';
 
@@ -28,7 +29,7 @@ class DetailCard extends StatelessWidget {
             alignment: Alignment.centerLeft,
             child: Text(
               title,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+              style: GoogleFonts.openSans(fontWeight: FontWeight.bold, fontSize: 20.0),
             ),
           ),
           Container(
@@ -49,7 +50,7 @@ class DetailCard extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
             child: Text(
               description,
-              style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18.0),
+              style: GoogleFonts.openSans(fontWeight: FontWeight.w600, fontSize: 18.0),
             ),
           ),
         ],

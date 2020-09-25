@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_azkari_app/model/Azkary_model.dart';
+import 'package:flutter_azkari_app/screens/components/BuildAppBar.dart';
 import 'package:flutter_azkari_app/screens/components/time_header.dart';
 
 import 'detail_card.dart';
@@ -17,6 +18,9 @@ class Body extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
+          BuildAppBar(
+            pressBtbBack: () => Navigator.pop(context),
+          ),
           TimeHeader(),
           ...List.generate(
             azkariesByType.length,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../constants.dart';
 
@@ -15,8 +16,8 @@ class TimeDecoration extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(2.0),
-      margin: EdgeInsets.symmetric(horizontal: 3.0),
+      padding: EdgeInsets.symmetric(horizontal:3.0),
+      margin: EdgeInsets.all(2.0),
       decoration: BoxDecoration(
         border: Border.all(
           width: 1.0,
@@ -28,7 +29,7 @@ class TimeDecoration extends StatelessWidget {
       ),
       child: Text(
         '07:12',
-        style: TextStyle(
+        style: GoogleFonts.openSans(
           color: isDecoration ? kDefaultTextColor : Colors.black,
           fontSize: 14.0,
           fontWeight: isDecoration ? FontWeight.bold : FontWeight.w600,
