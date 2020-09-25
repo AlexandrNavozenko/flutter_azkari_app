@@ -40,7 +40,7 @@ class AzkaryCard extends StatelessWidget {
               title,
               style: GoogleFonts.openSans(
                   color: Colors.white,
-                  fontSize: 18.0),
+                  fontSize: 17.0, fontWeight: FontWeight.w600),
             ),
           ),
           Positioned(
@@ -54,11 +54,11 @@ class AzkaryCard extends StatelessWidget {
                   },
                 );
               },
+              textColor: kDefaultTextColor,
               child: Text(
                 'Посмотреть >',
                 style: GoogleFonts.openSans(
-                    color: kDefaultTextColor,
-                    fontSize: 16.0),
+                    fontSize: 12.0, fontWeight: FontWeight.w400, color: kDefaultTextColor),
               ),
             ),
           ),
