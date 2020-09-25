@@ -25,9 +25,12 @@ class AzkaryCard extends StatelessWidget {
       child: Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset(
-            image,
-            fit: BoxFit.cover,
+          ClipRRect(
+            borderRadius: BorderRadius.circular(5.0),
+            child: Image.asset(
+              image,
+              fit: BoxFit.cover,
+            ),
           ),
           Positioned(
             bottom: 40.0,
@@ -36,7 +39,6 @@ class AzkaryCard extends StatelessWidget {
               title,
               style: TextStyle(
                   color: Colors.white,
-                  fontWeight: FontWeight.bold,
                   fontSize: 18.0),
             ),
           ),
@@ -52,10 +54,9 @@ class AzkaryCard extends StatelessWidget {
                 );
               },
               child: Text(
-                'Подробно >',
+                'Посмотреть >',
                 style: TextStyle(
-                    color: Colors.green,
-                    fontWeight: FontWeight.bold,
+                    color: kDefaultTextColor,
                     fontSize: 16.0),
               ),
             ),

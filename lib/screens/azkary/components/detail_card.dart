@@ -46,7 +46,7 @@ class DetailCard extends StatelessWidget {
             margin: EdgeInsets.only(top: kDefaultPadding),
             color: Colors.white,
             width: double.infinity,
-            padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
+            padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
             child: Text(
               description,
               style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18.0),

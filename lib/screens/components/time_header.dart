@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../constants.dart';
+import 'time_decoration.dart';
 
 class TimeHeader extends StatelessWidget {
   const TimeHeader({
@@ -25,12 +26,12 @@ class TimeHeader extends StatelessWidget {
               children: [
                 Icon(
                   Icons.location_on,
-                  color: Colors.green,
+                  color: kDefaultTextColor,
                 ),
                 Text(
                   'Москва',
                   style: TextStyle(
-                    color: Colors.green,
+                    color: kDefaultTextColor,
                     fontWeight: FontWeight.bold,
                     fontSize: 20.0,
                   ),
@@ -65,45 +66,9 @@ class TimeHeader extends StatelessWidget {
             ),
             Icon(
               Icons.notifications_none,
-              color: Colors.green,
+              color: kDefaultTextColor,
             ),
           ],
-        ),
-      ),
-    );
-  }
-}
-
-class TimeDecoration extends StatelessWidget {
-  const TimeDecoration({
-    Key key,
-    @required this.isDecoration,
-    @required this.title,
-  }) : super(key: key);
-
-  final bool isDecoration;
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(2.0),
-      margin: EdgeInsets.symmetric(horizontal: 3.0),
-      decoration: BoxDecoration(
-        border: Border.all(
-          width: 1.0,
-          color: isDecoration ? Colors.green : Colors.white,
-        ),
-        borderRadius: BorderRadius.all(
-          Radius.circular(10.0),
-        ),
-      ),
-      child: Text(
-        '07:12',
-        style: TextStyle(
-          color: isDecoration ? Colors.green : Colors.black,
-          fontSize: 14.0,
-          fontWeight: isDecoration ? FontWeight.bold : FontWeight.w400,
         ),
       ),
     );

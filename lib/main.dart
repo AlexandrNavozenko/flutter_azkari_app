@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_azkari_app/screens/azkary/azkary.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'Screens/home/home_screen.dart';
 import 'constants.dart';
@@ -20,7 +21,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Azkari app',
       theme: ThemeData(
-        textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
+        textTheme: GoogleFonts.openSansTextTheme(
+          Theme.of(context).textTheme,
+        ),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomeScreen(),

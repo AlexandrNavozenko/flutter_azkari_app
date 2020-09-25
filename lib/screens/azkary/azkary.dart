@@ -11,6 +11,7 @@ class Azkary extends StatelessWidget {
     final Map arguments = ModalRoute.of(context).settings.arguments as Map;
     final List<AzkaryModel> azkariesByType = azkaries.where((element) => element.typeAczaryId == arguments['id']).toList();
     return Scaffold(
+      backgroundColor: kDefaultBackgroundColorColor,
       appBar: _buildAppBar(context),
       body: Body(azkariesByType: azkariesByType),
     );
@@ -22,13 +23,13 @@ class Azkary extends StatelessWidget {
       backgroundColor: Colors.white,
       title: Center(
           child: Text(
-            'Азкари',
+            'Азкары',
             style: TextStyle(color: Colors.black),
           )),
       leading: IconButton(
           icon: Icon(
             Icons.arrow_back_ios,
-            color: kTextColor,
+            color: kDefaultTextColor,
           ),
           onPressed: () => Navigator.pop(context)),
       actions: [

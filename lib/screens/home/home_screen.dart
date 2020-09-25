@@ -9,6 +9,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kDefaultBackgroundColorColor,
       appBar: _buildAppBar(),
       body: Body(),
     );
@@ -26,7 +27,7 @@ class HomeScreen extends StatelessWidget {
       leading: IconButton(
           icon: Icon(
             Icons.arrow_back_ios,
-            color: kTextColor,
+            color: kDefaultTextColor,
           ),
           onPressed: () => print('press BACK')),
       actions: [
